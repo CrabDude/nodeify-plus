@@ -45,7 +45,7 @@ function myAsyncMethod(arg, callback) {
   Takes a promise and extends it to support the `.nodeify` method.  It will still support the nodeify method after calls to `.then`.
 
 ```javascript
-var Promise = require('promise');
+var Promise = require('bluebird');
 var nodeify = require('nodeify');
 
 function myAsyncMethod(arg, callback) {
@@ -70,7 +70,7 @@ function myAsyncMethod(arg, callback) {
 
 #### Extend()
 
-  Extends the default promise constructor (returned by calling `require('promise')`) and extends it to support `.nodeify`.
+  Extends the default promise constructor (returned by calling `require('bluebird')`) and extends it to support `.nodeify`.
 
 ```javascript
 require('nodeify').extend();

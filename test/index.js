@@ -1,6 +1,6 @@
 require('mocha-as-promised')();
 var assert = require('assert');
-var Promise = require('promise');
+var Promise = require('bluebird');
 var nodeify = require('../');
 
 var A = {};
